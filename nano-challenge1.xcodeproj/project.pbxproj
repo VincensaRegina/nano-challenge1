@@ -13,6 +13,19 @@
 		A29B913C2819B05400B55663 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A29B913A2819B05400B55663 /* Main.storyboard */; };
 		A29B913E2819B05600B55663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A29B913D2819B05600B55663 /* Assets.xcassets */; };
 		A29B91412819B05600B55663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A29B913F2819B05600B55663 /* LaunchScreen.storyboard */; };
+		A29B914A2819BA9000B55663 /* Moods.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A29B91482819BA9000B55663 /* Moods.storyboard */; };
+		A29B914F2819BAD300B55663 /* Tasks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A29B914D2819BAD300B55663 /* Tasks.storyboard */; };
+		A29B91522819BAFF00B55663 /* Rewards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A29B91502819BAFF00B55663 /* Rewards.storyboard */; };
+		A2B961F82819BC8300816BB5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B961F62819BC8300816BB5 /* Home.storyboard */; };
+		A2B961FA2819BE6D00816BB5 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B961F92819BE6D00816BB5 /* TasksViewController.swift */; };
+		A2B961FC2819D3D000816BB5 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B961FB2819D3D000816BB5 /* Data.swift */; };
+		A2B962032819E68500816BB5 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B962012819E68500816BB5 /* TaskTableViewCell.swift */; };
+		A2B962042819E68500816BB5 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2B962022819E68500816BB5 /* TaskTableViewCell.xib */; };
+		A2B962062819ECCC00816BB5 /* TaskHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B962052819ECCC00816BB5 /* TaskHeaderView.swift */; };
+		A2B96209281A563300816BB5 /* AddTask.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B96207281A563300816BB5 /* AddTask.storyboard */; };
+		A2B9620B281A584C00816BB5 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B9620A281A584C00816BB5 /* AddTaskViewController.swift */; };
+		A2B9620E281A756D00816BB5 /* AddSubtask.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B9620C281A756D00816BB5 /* AddSubtask.storyboard */; };
+		A2B96216281AAAC900816BB5 /* AddSubtaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B96215281AAAC900816BB5 /* AddSubtaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +37,19 @@
 		A29B913D2819B05600B55663 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A29B91402819B05600B55663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A29B91422819B05600B55663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A29B91492819BA9000B55663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "nano-challenge1/Base.lproj/Moods.storyboard"; sourceTree = "<group>"; };
+		A29B914E2819BAD300B55663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "nano-challenge1/Base.lproj/Tasks.storyboard"; sourceTree = "<group>"; };
+		A29B91512819BAFF00B55663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "nano-challenge1/Base.lproj/Rewards.storyboard"; sourceTree = "<group>"; };
+		A2B961F72819BC8300816BB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "nano-challenge1/Base.lproj/Home.storyboard"; sourceTree = "<group>"; };
+		A2B961F92819BE6D00816BB5 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		A2B961FB2819D3D000816BB5 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		A2B962012819E68500816BB5 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		A2B962022819E68500816BB5 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
+		A2B962052819ECCC00816BB5 /* TaskHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskHeaderView.swift; sourceTree = "<group>"; };
+		A2B96208281A563300816BB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "nano-challenge1/Base.lproj/AddTask.storyboard"; sourceTree = "<group>"; };
+		A2B9620A281A584C00816BB5 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		A2B9620D281A756D00816BB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AddSubtask.storyboard; sourceTree = "<group>"; };
+		A2B96215281AAAC900816BB5 /* AddSubtaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubtaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +66,11 @@
 		A29B91282819B05400B55663 = {
 			isa = PBXGroup;
 			children = (
+				A2B96207281A563300816BB5 /* AddTask.storyboard */,
+				A2B961F62819BC8300816BB5 /* Home.storyboard */,
+				A29B91502819BAFF00B55663 /* Rewards.storyboard */,
+				A29B914D2819BAD300B55663 /* Tasks.storyboard */,
+				A29B91482819BA9000B55663 /* Moods.storyboard */,
 				A29B91332819B05400B55663 /* nano-challenge1 */,
 				A29B91322819B05400B55663 /* Products */,
 			);
@@ -63,6 +94,14 @@
 				A29B913D2819B05600B55663 /* Assets.xcassets */,
 				A29B913F2819B05600B55663 /* LaunchScreen.storyboard */,
 				A29B91422819B05600B55663 /* Info.plist */,
+				A2B961F92819BE6D00816BB5 /* TasksViewController.swift */,
+				A2B961FB2819D3D000816BB5 /* Data.swift */,
+				A2B962012819E68500816BB5 /* TaskTableViewCell.swift */,
+				A2B962022819E68500816BB5 /* TaskTableViewCell.xib */,
+				A2B962052819ECCC00816BB5 /* TaskHeaderView.swift */,
+				A2B9620A281A584C00816BB5 /* AddTaskViewController.swift */,
+				A2B9620C281A756D00816BB5 /* AddSubtask.storyboard */,
+				A2B96215281AAAC900816BB5 /* AddSubtaskViewController.swift */,
 			);
 			path = "nano-challenge1";
 			sourceTree = "<group>";
@@ -125,7 +164,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2B96209281A563300816BB5 /* AddTask.storyboard in Resources */,
+				A2B961F82819BC8300816BB5 /* Home.storyboard in Resources */,
 				A29B91412819B05600B55663 /* LaunchScreen.storyboard in Resources */,
+				A29B914A2819BA9000B55663 /* Moods.storyboard in Resources */,
+				A2B9620E281A756D00816BB5 /* AddSubtask.storyboard in Resources */,
+				A29B914F2819BAD300B55663 /* Tasks.storyboard in Resources */,
+				A2B962042819E68500816BB5 /* TaskTableViewCell.xib in Resources */,
+				A29B91522819BAFF00B55663 /* Rewards.storyboard in Resources */,
 				A29B913E2819B05600B55663 /* Assets.xcassets in Resources */,
 				A29B913C2819B05400B55663 /* Main.storyboard in Resources */,
 			);
@@ -139,6 +185,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A29B91392819B05400B55663 /* ViewController.swift in Sources */,
+				A2B96216281AAAC900816BB5 /* AddSubtaskViewController.swift in Sources */,
+				A2B9620B281A584C00816BB5 /* AddTaskViewController.swift in Sources */,
+				A2B962062819ECCC00816BB5 /* TaskHeaderView.swift in Sources */,
+				A2B961FC2819D3D000816BB5 /* Data.swift in Sources */,
+				A2B962032819E68500816BB5 /* TaskTableViewCell.swift in Sources */,
+				A2B961FA2819BE6D00816BB5 /* TasksViewController.swift in Sources */,
 				A29B91352819B05400B55663 /* AppDelegate.swift in Sources */,
 				A29B91372819B05400B55663 /* SceneDelegate.swift in Sources */,
 			);
@@ -161,6 +213,54 @@
 				A29B91402819B05600B55663 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A29B91482819BA9000B55663 /* Moods.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A29B91492819BA9000B55663 /* Base */,
+			);
+			name = Moods.storyboard;
+			sourceTree = "<group>";
+		};
+		A29B914D2819BAD300B55663 /* Tasks.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A29B914E2819BAD300B55663 /* Base */,
+			);
+			name = Tasks.storyboard;
+			sourceTree = "<group>";
+		};
+		A29B91502819BAFF00B55663 /* Rewards.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A29B91512819BAFF00B55663 /* Base */,
+			);
+			name = Rewards.storyboard;
+			sourceTree = "<group>";
+		};
+		A2B961F62819BC8300816BB5 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2B961F72819BC8300816BB5 /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		A2B96207281A563300816BB5 /* AddTask.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2B96208281A563300816BB5 /* Base */,
+			);
+			name = AddTask.storyboard;
+			sourceTree = "<group>";
+		};
+		A2B9620C281A756D00816BB5 /* AddSubtask.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2B9620D281A756D00816BB5 /* Base */,
+			);
+			name = AddSubtask.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
