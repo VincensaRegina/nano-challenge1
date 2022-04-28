@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GjH-bB-3SP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,18 +11,94 @@
         <!--Rewards-->
         <scene sceneID="ETs-e0-pnA">
             <objects>
-                <viewController id="hS7-h5-X2b" sceneMemberID="viewController">
+                <viewController id="hS7-h5-X2b" customClass="RewardsViewController" customModule="nano_challenge1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eqX-5n-IwR">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uy-N7-WFa">
+                                <rect key="frame" x="325" y="103" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coloncurrencysign.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9SC-0R-uJK">
+                                <rect key="frame" x="374" y="103.5" width="20" height="19"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qef-UC-5eL">
+                                <rect key="frame" x="0.0" y="156" width="414" height="686"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="12" reuseIdentifier="RewardCell" rowHeight="63" id="2gW-yo-aVj" customClass="RewardTableViewCell" customModule="nano_challenge1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="63"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2gW-yo-aVj" id="YXF-0v-eD6">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcJ-3G-ILS">
+                                                    <rect key="frame" x="30" y="21" width="45" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2z-iK-V90">
+                                                    <rect key="frame" x="331" y="21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coloncurrencysign.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="V0A-0D-vtw">
+                                                    <rect key="frame" x="378" y="22" width="20" height="19"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="G2z-iK-V90" firstAttribute="centerY" secondItem="YXF-0v-eD6" secondAttribute="centerY" id="7U7-UI-2ti"/>
+                                                <constraint firstItem="V0A-0D-vtw" firstAttribute="centerY" secondItem="YXF-0v-eD6" secondAttribute="centerY" id="MVZ-Sf-Prj"/>
+                                                <constraint firstItem="mcJ-3G-ILS" firstAttribute="centerY" secondItem="YXF-0v-eD6" secondAttribute="centerY" id="TdR-2K-HMr"/>
+                                                <constraint firstItem="mcJ-3G-ILS" firstAttribute="top" secondItem="YXF-0v-eD6" secondAttribute="topMargin" constant="10" id="ZaW-fT-d9t"/>
+                                                <constraint firstItem="mcJ-3G-ILS" firstAttribute="leading" secondItem="YXF-0v-eD6" secondAttribute="leadingMargin" constant="10" id="alv-GY-BFb"/>
+                                                <constraint firstAttribute="trailing" secondItem="V0A-0D-vtw" secondAttribute="trailing" constant="16" id="saI-CW-VBl"/>
+                                                <constraint firstItem="V0A-0D-vtw" firstAttribute="leading" secondItem="G2z-iK-V90" secondAttribute="trailing" constant="5" id="vg6-Ph-yrJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblCoins" destination="G2z-iK-V90" id="6hq-uf-bGG"/>
+                                            <outlet property="lblName" destination="mcJ-3G-ILS" id="M6z-mR-7EX"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="idF-aj-p5E"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="9SC-0R-uJK" secondAttribute="trailing" id="CJu-mz-l2Q"/>
+                            <constraint firstItem="qef-UC-5eL" firstAttribute="top" secondItem="idF-aj-p5E" secondAttribute="top" constant="16" id="HRc-2B-1hM"/>
+                            <constraint firstItem="9SC-0R-uJK" firstAttribute="top" secondItem="eqX-5n-IwR" secondAttribute="topMargin" constant="-37" id="J6V-n8-xgg"/>
+                            <constraint firstItem="9SC-0R-uJK" firstAttribute="leading" secondItem="4uy-N7-WFa" secondAttribute="trailing" constant="5" id="TVv-sU-UXC"/>
+                            <constraint firstItem="idF-aj-p5E" firstAttribute="bottom" secondItem="qef-UC-5eL" secondAttribute="bottom" constant="20" id="UGA-C6-w61"/>
+                            <constraint firstAttribute="trailing" secondItem="qef-UC-5eL" secondAttribute="trailing" id="gW9-Hj-I4v"/>
+                            <constraint firstItem="4uy-N7-WFa" firstAttribute="top" secondItem="eqX-5n-IwR" secondAttribute="topMargin" constant="-37" id="mJo-Vp-sLu"/>
+                            <constraint firstItem="qef-UC-5eL" firstAttribute="leading" secondItem="eqX-5n-IwR" secondAttribute="leading" id="o86-EP-nTw"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Rewards" id="GZt-vJ-JAk"/>
+                    <navigationItem key="navigationItem" title="Rewards" id="GZt-vJ-JAk">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="plus" catalog="system" id="1CE-y0-5CU">
+                            <connections>
+                                <action selector="goToAddReward:" destination="hS7-h5-X2b" id="sVv-4J-341"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="lblCoins" destination="4uy-N7-WFa" id="Hzf-ut-tTH"/>
+                        <outlet property="tbReward" destination="qef-UC-5eL" id="6dG-LY-Uxz"/>
+                        <segue destination="eFs-EO-WGn" kind="presentation" identifier="AddRewardModal" id="8XI-Gx-9d3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aFN-z9-qWs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2266.666666666667" y="1270.9821428571429"/>
+            <point key="canvasLocation" x="2271" y="1271"/>
         </scene>
         <!--Rewards-->
         <scene sceneID="xMD-3Q-xz4">
@@ -42,9 +119,19 @@
             </objects>
             <point key="canvasLocation" x="1356.521739130435" y="1270.9821428571429"/>
         </scene>
+        <!--AddRewards-->
+        <scene sceneID="IBv-gx-fQu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddRewards" id="eFs-EO-WGn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GNs-O9-Ycv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3154" y="1271"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="coloncurrencysign.circle" catalog="system" width="128" height="121"/>
         <image name="gift" catalog="system" width="128" height="124"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -26,6 +26,10 @@
 		A2B9620B281A584C00816BB5 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B9620A281A584C00816BB5 /* AddTaskViewController.swift */; };
 		A2B9620E281A756D00816BB5 /* AddSubtask.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B9620C281A756D00816BB5 /* AddSubtask.storyboard */; };
 		A2B96216281AAAC900816BB5 /* AddSubtaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B96215281AAAC900816BB5 /* AddSubtaskViewController.swift */; };
+		A2B96218281B3D6600816BB5 /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B96217281B3D6600816BB5 /* RewardsViewController.swift */; };
+		A2B9621A281B488B00816BB5 /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B96219281B488B00816BB5 /* RewardTableViewCell.swift */; };
+		A2E74ACA281B4EDA00473911 /* AddRewards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E74AC8281B4EDA00473911 /* AddRewards.storyboard */; };
+		A2E74ACC281B516100473911 /* AddRewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E74ACB281B516100473911 /* AddRewardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		A2B9620A281A584C00816BB5 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		A2B9620D281A756D00816BB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AddSubtask.storyboard; sourceTree = "<group>"; };
 		A2B96215281AAAC900816BB5 /* AddSubtaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubtaskViewController.swift; sourceTree = "<group>"; };
+		A2B96217281B3D6600816BB5 /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
+		A2B96219281B488B00816BB5 /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
+		A2E74AC9281B4EDA00473911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "nano-challenge1/Base.lproj/AddRewards.storyboard"; sourceTree = "<group>"; };
+		A2E74ACB281B516100473911 /* AddRewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRewardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 		A29B91282819B05400B55663 = {
 			isa = PBXGroup;
 			children = (
+				A2E74AC8281B4EDA00473911 /* AddRewards.storyboard */,
 				A2B96207281A563300816BB5 /* AddTask.storyboard */,
 				A2B961F62819BC8300816BB5 /* Home.storyboard */,
 				A29B91502819BAFF00B55663 /* Rewards.storyboard */,
@@ -102,6 +111,9 @@
 				A2B9620A281A584C00816BB5 /* AddTaskViewController.swift */,
 				A2B9620C281A756D00816BB5 /* AddSubtask.storyboard */,
 				A2B96215281AAAC900816BB5 /* AddSubtaskViewController.swift */,
+				A2B96217281B3D6600816BB5 /* RewardsViewController.swift */,
+				A2B96219281B488B00816BB5 /* RewardTableViewCell.swift */,
+				A2E74ACB281B516100473911 /* AddRewardViewController.swift */,
 			);
 			path = "nano-challenge1";
 			sourceTree = "<group>";
@@ -170,6 +182,7 @@
 				A29B914A2819BA9000B55663 /* Moods.storyboard in Resources */,
 				A2B9620E281A756D00816BB5 /* AddSubtask.storyboard in Resources */,
 				A29B914F2819BAD300B55663 /* Tasks.storyboard in Resources */,
+				A2E74ACA281B4EDA00473911 /* AddRewards.storyboard in Resources */,
 				A2B962042819E68500816BB5 /* TaskTableViewCell.xib in Resources */,
 				A29B91522819BAFF00B55663 /* Rewards.storyboard in Resources */,
 				A29B913E2819B05600B55663 /* Assets.xcassets in Resources */,
@@ -185,10 +198,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A29B91392819B05400B55663 /* ViewController.swift in Sources */,
+				A2E74ACC281B516100473911 /* AddRewardViewController.swift in Sources */,
+				A2B9621A281B488B00816BB5 /* RewardTableViewCell.swift in Sources */,
 				A2B96216281AAAC900816BB5 /* AddSubtaskViewController.swift in Sources */,
 				A2B9620B281A584C00816BB5 /* AddTaskViewController.swift in Sources */,
 				A2B962062819ECCC00816BB5 /* TaskHeaderView.swift in Sources */,
 				A2B961FC2819D3D000816BB5 /* Data.swift in Sources */,
+				A2B96218281B3D6600816BB5 /* RewardsViewController.swift in Sources */,
 				A2B962032819E68500816BB5 /* TaskTableViewCell.swift in Sources */,
 				A2B961FA2819BE6D00816BB5 /* TasksViewController.swift in Sources */,
 				A29B91352819B05400B55663 /* AppDelegate.swift in Sources */,
@@ -261,6 +277,14 @@
 				A2B9620D281A756D00816BB5 /* Base */,
 			);
 			name = AddSubtask.storyboard;
+			sourceTree = "<group>";
+		};
+		A2E74AC8281B4EDA00473911 /* AddRewards.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2E74AC9281B4EDA00473911 /* Base */,
+			);
+			name = AddRewards.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

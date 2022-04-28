@@ -35,6 +35,18 @@ class Subtask {
     }
 }
 
+class Reward {
+    var name: String
+    var price: Float
+    var coin: Int
+    
+    init(name: String, price: Float, coin: Int) {
+        self.name = name
+        self.price = price
+        self.coin = coin
+    }
+}
+
 
 func taskFeeder() -> [Task] {
     // Date Formatter
@@ -75,6 +87,15 @@ func insertSubtask() -> [Task] {
 }
 
 var tasksSeed = insertSubtask()
+
+//Coin
+var userCoin = 10000
+
+var rewardsSeed = [
+    Reward.init(name: "Buy a coffee", price: 20000.0, coin: 20),
+    Reward.init(name: "Buy a book", price: 30000, coin: 30),
+    Reward.init(name: "Buy a game", price: 500000, coin: 500)
+]
 
 
 
