@@ -27,8 +27,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbu-ju-g3y">
-                                <rect key="frame" x="20" y="183" width="44" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbu-ju-g3y">
+                                <rect key="frame" x="20" y="183" width="39" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -94,9 +94,11 @@
                         <outlet property="lblCoin" destination="mu7-Hi-enC" id="DZb-no-eeT"/>
                         <outlet property="txtCoin" destination="Cqr-g5-Von" id="cl7-Rs-daa"/>
                         <outlet property="txtName" destination="OeC-ZV-Hx2" id="oap-d2-Cql"/>
+                        <segue destination="Xnz-My-0z5" kind="unwind" identifier="unwindReward" unwindAction="unwind:" id="Y7T-GQ-zB3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SpW-4W-bbX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Xnz-My-0z5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4063.7681159420295" y="1270.9821428571429"/>
         </scene>

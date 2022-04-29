@@ -17,6 +17,10 @@ class RewardsViewController: UIViewController {
         performSegue(withIdentifier: "AddRewardModal", sender: self)
     }
     
+    @IBAction func unwind( _ seg: UIStoryboardSegue) {
+        tbReward.reloadData()
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +32,7 @@ class RewardsViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let destinationVC = segue.destination as? AddTaskViewController else {return}
+        guard segue.destination is AddTaskViewController else {return}
     }
 }
 
@@ -46,6 +50,36 @@ extension RewardsViewController: UITableViewDataSource, UITableViewDelegate {
         }
     
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let alert = UIAlertController(title: "Warning", message: "Would you like to trade \(rewardsSeed[indexPath.row].coin) coins for '\(rewardsSeed[indexPath.row].name)'", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Trade", style: .destructive) {
+            UIAlertAction in userCoin -= rewardsSeed[indexPath.row].coin
+            self.lblCoins.text = String(userCoin)
+        })
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) {
+            UIAlertAction in print("ttest")
+        }
+        
+        alert.addAction(cancelAction)
+        
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            tableView.beginUpdates()
+            rewardsSeed.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.endUpdates()
+        }
     }
     
     
