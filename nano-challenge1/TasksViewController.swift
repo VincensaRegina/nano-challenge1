@@ -33,6 +33,7 @@ class TasksViewController: UIViewController {
         // Table View Setting
         tbTasks.delegate = self
         tbTasks.dataSource = self
+        
         self.registerTableView()
         
         // Search Controller
@@ -95,9 +96,8 @@ class TasksViewController: UIViewController {
         }
     
     }
-    
-
 }
+
 
 extension TasksViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
